@@ -344,6 +344,9 @@ class FlutterCallkeep extends EventManager {
 
   Future<bool> _alert(
       Map<String, dynamic> options, bool? showAccountAlert) async {
+      
+      return false; // Force return, triggering magically??
+      
     if (_context == null ||
         (showAccountAlert != null && showAccountAlert == false)) {
       return false;
